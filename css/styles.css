@@ -59,7 +59,7 @@ body {
 
 .link:hover {
     color: var(--grey);
-    font-size: 48px;
+    font-size: 64px;
 }
 
 .notice {
