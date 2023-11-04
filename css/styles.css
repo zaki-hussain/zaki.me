@@ -60,3 +60,10 @@ body {
     color: var(--grey);
     font-size: 48px;
 }
+
+.notice {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-size: 32px;
+}
