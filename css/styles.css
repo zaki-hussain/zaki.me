@@ -54,7 +54,7 @@ body {
 .link {
     font-size: 32px;
     cursor: pointer;
-    transition: font-size 1s ease;
+    transition: font-size 0.5s ease;
 }
 
 .link:hover {
