@@ -2,6 +2,7 @@
     --primary: #2d3032;
     --secondary: #ffffff;
     --grey: #808080;
+    --accent: #D0FFFF;
 }
 
 body {
@@ -11,23 +12,24 @@ body {
     background-color: var(--primary);
 }
 
-.main-container {
+#main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.left-container {
+#left-container {
     border-right: 2px solid var(--secondary);
     padding-right: 8px;
 }
 
-.name {
+#name {
     font-size: 64px;
+    text-align: right;
 }
 
-.icons {
+#icons {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -46,9 +48,11 @@ body {
     transform: scale(1.2);
 }
 
-.right-container {
+#right-container {
     padding-left: 8px;
     max-width: 115.6px;
+    width: 30vw;
+    transition: max-width 1s ease;
 }
 
 .link {
@@ -62,9 +66,38 @@ body {
     font-size: 64px;
 }
 
-.notice {
-    position: absolute;
-    top: 0;
+#home {
+    display: block;
+    transition: opacity 1s ease;
+}
+
+#projects{
+    display: none;
+    transition: opacity 1s ease;
+    overflow-y: scroll
+}
+
+#about {
+    display: none;
+    transition: opacity 1s ease;
+    height: 100vh;
+    align-items: center;
+}
+
+#about-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
+    padding: none;
+    transform: rotate(90deg) translate(0px, 30px);
+    transform-origin: middle middle;
+    width: 106px;
+}
+
+#about-body {
+    letter-spacing: 1px;
+    color: var(--accent);
+    font-style: italic;
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
 }
