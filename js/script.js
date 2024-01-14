@@ -1,21 +1,29 @@
-function change(element, show) {
-    document.getElementById(element).style.display="none";
-    document.getElementById(show).style.display="flex";
+function change(hide, show, display) {
+    document.getElementById(hide).style.display="none";
+    document.getElementById(show).style.display=display;
+    document.getElementById(show).style.opacity="1";
 }
 
 function projects() {
     document.getElementById("right-container").style.maxWidth="25vw";
     document.getElementById("home").style.opacity="0";
-    setTimeout(change, 1000, "home", "projects");
+    setTimeout(change, 1000, "home", "projects", "flex");
 }
 
 function about() {
     document.getElementById("right-container").style.maxWidth="25vw";
     document.getElementById("home").style.opacity="0";
-    setTimeout(change, 1000, "home", "about");
+    setTimeout(change, 1000, "home", "about", "flex");
 }
 
-function home() {
+function aHome() {
     document.getElementById("right-container").style.maxWidth="115.6px";
-    document.getElementById("home").style.display="block";
+    document.getElementById("about").style.opacity="0";
+    setTimeout(change, 1000, "about", "home", "block");
+}
+
+function pHome() {
+    document.getElementById("right-container").style.maxWidth="115.6px";
+    document.getElementById("projects").style.opacity="0";
+    setTimeout(change, 1000, "projects", "home", "block");
 }

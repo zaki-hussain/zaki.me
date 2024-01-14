@@ -2,7 +2,9 @@
     --primary: #2d3032;
     --secondary: #ffffff;
     --grey: #808080;
-    --accent: #D0FFFF;
+    --accent: #C0FFFF;
+    --accent2: #FFFFC0;
+    --accent2-grey: #808061;
 }
 
 body {
@@ -72,14 +74,15 @@ body {
 }
 
 #projects{
-    display: none;
     transition: opacity 1s ease;
-    overflow-y: scroll
+    display: none;
+    height: 100vh;
+    align-items: center;
 }
 
 #about {
-    display: none;
     transition: opacity 1s ease;
+    display: none;
     height: 100vh;
     align-items: center;
 }
@@ -94,10 +97,28 @@ body {
 }
 
 #about-body {
+    min-width: calc(25vw - 78.4px);
     letter-spacing: 1px;
     color: var(--accent);
     font-style: italic;
     text-align: left;
     font-size: 18px;
-    line-height: 24px;
+}
+
+p {
+    margin: 9px 0;
+}
+
+.home-link {
+    font-size: 27px;
+    color: var(--accent2);
+    cursor: pointer;
+    width: fit-content;
+    letter-spacing: normal;
+    font-style: normal;
+}
+
+.home-link:hover {
+    color: var(--accent2-grey);
+    font-style: italic;
 }
