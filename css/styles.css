@@ -52,7 +52,7 @@ body {
 #right-container {
     padding-left: 8px;
     max-width: 115.6px;
-    width: 30vw;
+    width: 25vw;
     transition: max-width 1s ease;
 }
 
@@ -86,17 +86,18 @@ body {
     align-items: center;
 }
 
-#about-title {
+.section-title {
+    position: absolute;
     text-align: center;
     font-size: 30px;
-    padding: none;
-    transform: rotate(90deg) translate(0px, 30px);
+    transform: rotate(90deg) translate(0px, 38px);
     transform-origin: middle middle;
     width: 106px;
 }
 
 #about-body {
-    min-width: calc(25vw - 111.73px);
+    margin-left: 40px;
+    min-width: calc(25vw - 40px);
     letter-spacing: 1px;
     color: var(--secondary);
     font-style: italic;
