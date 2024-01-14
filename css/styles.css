@@ -3,8 +3,7 @@
     --secondary: #ffffff;
     --grey: #808080;
     --accent: #C0FFFF;
-    --accent2: #FFFFC0;
-    --accent2-grey: #808061;
+    --accent-grey: #618080;
 }
 
 body {
@@ -97,12 +96,14 @@ body {
 }
 
 #about-body {
-    min-width: calc(25vw - 78.4px);
+    min-width: calc(25vw - 111.73px);
     letter-spacing: 1px;
-    color: var(--accent);
+    color: var(--secondary);
     font-style: italic;
     text-align: left;
     font-size: 18px;
+    border: 1px solid white;
+    padding: 16px;
 }
 
 p {
@@ -111,7 +112,7 @@ p {
 
 .home-link {
     font-size: 27px;
-    color: var(--accent2);
+    color: var(--accent);
     cursor: pointer;
     width: fit-content;
     letter-spacing: normal;
@@ -119,6 +120,6 @@ p {
 }
 
 .home-link:hover {
-    color: var(--accent2-grey);
+    color: var(--accent-grey);
     font-style: italic;
 }
