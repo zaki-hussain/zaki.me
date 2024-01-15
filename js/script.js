@@ -5,13 +5,13 @@ function change(hide, show, display) {
 }
 
 function projects() {
-    document.getElementById("right-container").style.maxWidth="25vw";
+    document.getElementById("right-container").style.maxWidth="30vw";
     document.getElementById("home").style.opacity="0";
     setTimeout(change, 1000, "home", "projects", "flex");
 }
 
 function about() {
-    document.getElementById("right-container").style.maxWidth="25vw";
+    document.getElementById("right-container").style.maxWidth="30vw";
     document.getElementById("home").style.opacity="0";
     setTimeout(change, 1000, "home", "about", "flex");
 }

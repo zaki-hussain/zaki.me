@@ -52,7 +52,7 @@ body {
 #right-container {
     padding-left: 8px;
     max-width: 115.6px;
-    width: 25vw;
+    width: 30vw;
     transition: max-width 1s ease;
 }
 
@@ -72,14 +72,7 @@ body {
     transition: opacity 1s ease;
 }
 
-#projects{
-    transition: opacity 1s ease;
-    display: none;
-    height: 100vh;
-    align-items: center;
-}
-
-#about {
+#about, #projects {
     transition: opacity 1s ease;
     display: none;
     height: 100vh;
@@ -95,20 +88,21 @@ body {
     width: 106px;
 }
 
-#about-body {
-    margin-left: 40px;
-    min-width: calc(25vw - 40px);
-    letter-spacing: 1px;
+.section-main {
+    margin-left: 50px;
+    min-width: calc(30vw - 50px);
     color: var(--secondary);
-    font-style: italic;
     text-align: left;
     font-size: 18px;
-    border: 1px solid white;
-    padding: 16px;
 }
 
-p {
-    margin: 9px 0;
+.section-body {
+    padding: 16px;
+    border: 1px solid white;
+    max-height: 25vh;
+    overflow-y: scroll;
+    font-style: italic;
+    letter-spacing: 1px;
 }
 
 .home-link {
@@ -116,11 +110,15 @@ p {
     color: var(--accent);
     cursor: pointer;
     width: fit-content;
-    letter-spacing: normal;
-    font-style: normal;
+    padding: 16px;
+    position: absolute;
 }
 
 .home-link:hover {
     color: var(--accent-grey);
     font-style: italic;
+}
+
+p {
+    margin: 9px 0;
 }
