@@ -1,9 +1,9 @@
 :root {
     --primary: #2d3032;
     --secondary: #ffffff;
-    --grey: #808080;
+    --grey: #969899;
     --accent: #C0FFFF;
-    --accent-grey: #618080;
+    --accent-grey: #779899;
 }
 
 body {
@@ -92,21 +92,17 @@ body {
     margin-left: 50px;
     min-width: calc(30vw - 50px);
     color: var(--secondary);
-    text-align: left;
-    font-size: 18px;
 }
 
 .section-body {
     padding: 16px;
     border: 1px solid white;
-    max-height: 25vh;
+    max-height: 50vh;
     overflow-y: scroll;
-    font-style: italic;
-    letter-spacing: 1px;
 }
 
 .home-link {
-    font-size: 27px;
+    font-size: 24px;
     color: var(--accent);
     cursor: pointer;
     width: fit-content;
@@ -121,4 +117,60 @@ body {
 
 p {
     margin: 9px 0;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+
+.project {
+    display: flex;
+    height: 105px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid white;
+    justify-content: space-around;
+}
+
+.project:last-of-type {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.project:first-of-type {
+    padding-top: 0px;
+}
+
+.project-title {
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.project-title-text {
+    font-size: 24px;
+    text-align: center;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.project-title-text:hover {
+    color: var(--accent-grey);
+}
+
+.project-description {
+    flex: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+p a {
+    color: var(--accent);
+}
+
+p a:hover {
+    color: var(--accent-grey);
 }
