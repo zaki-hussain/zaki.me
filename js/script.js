@@ -1,7 +1,12 @@
 function change(hide, show, display) {
     document.getElementById(hide).style.display="none";
     document.getElementById(show).style.display=display;
-    document.getElementById(show).style.opacity="1";
+    document.getElementById(show).style.opacity="0";
+    setTimeout(visible, 10, show);
+}
+
+function visible(element) {
+    document.getElementById(element).style.opacity="1";
 }
 
 function projects() {
