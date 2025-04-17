@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html>
     <head>
         <meta charset = "UTF-8"/>
         <meta name="viewport" content="width=device-width">
@@ -8,65 +8,64 @@
         <title>Zaki Hussain</title>
         <link rel="icon"  type="image/x-icon" href="images/logo.jpg">
     </head>
+
     <body>
-        <div id="main-container">
-            <div id="left-container">
-                <div id="name">Zaki Hussain</div>
-                <div id="icons">
-                    <a href="https://github.com/zaki-hussain" target="_blank"><img class="icon" src="images/github.svg" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/-zaki" target="_blank"><img class="icon" src="images/linkedin.png" alt="LinkedIn"></a>
-                    <a href="mailto:mail@zaki.me" target="_blank"><img class="icon" src="images/email.svg" alt="Email"></a>
-                </div>
-            </div>
-
-            <div id="right-container">
-                <div id="home">
-                    <div class="link" onclick="projects()">Projects</div>
-                    <div class="link" onclick="about()">About</div>
-                </div>
-
-                <div id="projects">
-                    <div class="section-title">Projects</div>
-
-                    <div class="section-main">
-                        <div class="section-body">
-                            <div class="project">
-                                <div class="project-title"><a href="https://github.com/zaki-hussain/Project-Euler" target="_blank" class="project-title-text">Project Euler</a></div>
-                                <div class="project-description"><p>My solutions to maths/programming problems from <a href="https://projecteuler.net" target="_blank">projecteuler.net</a></p></div>
-                            </div>
-                            <div class="project">
-                                <div class="project-title"><a href="https://github.com/zaki-hussain/RSA" target="_blank" class="project-title-text">RSA Implementation</a></div>
-                                <div class="project-description"><p> My Python implementation of RSA</p></div>
-                            </div>
-                            <div class="project">
-                                <div class="project-title"><a href="https://github.com/zaki-hussain/zaki.me" target="_blank" class="project-title-text">zaki.me</a></div>
-                                <div class="project-description"><p>Source code for this website</p></div>
-                            </div>
-                            <div class="project">
-                                <div class="project-title"><a href="https://github.com/zaki-hussain?tab=repositories" target="_blank" class="project-title-text">All GitHub repositories</a></div>
-                                <div class="project-description"><p>Most things I've code recently are on GitHub</p></div>
-                            </div>
-                        </div>
-
-                        <div class="home-link" onclick="pHome()">Return to homepage</div>
-                    </div>
-                </div>
-                
-                <div id="about">
-                    <div class="section-title">About</div>
-
-                    <div class="section-main">
-                        <div class="section-body">
-                            <p>Hi, I'm Zaki!</p>
-                            <p>I'm currently in my final year of secondary school, studying maths, further maths, physics, and computer science.</p>
-                            <p>I plan to study maths and computer science at university next year.</p>
-                        </div>
-
-                        <div class="home-link" onclick="aHome()">Return to homepage</div>
-                    </div>
-                </div>
+        <div id="header">
+            <h1>Zaki Hussain</h1>
+            <div id="icons">
+                <a href="https://github.com/zaki-hussain" target="_blank"><img class="icon" src="images/github.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/-zaki" target="_blank"><img class="icon" src="images/linkedin.png" alt="LinkedIn"></a>
+                <a href="mailto:mail@zaki.me" target="_blank"><img class="icon" src="images/email.svg" alt="Email"></a>
             </div>
         </div>
-        <script src="js/script.js"></script> 
+
+        <div id="content">
+            <div class="homepage">
+                <div class="link" onclick="swapContent('about', 2)">About</div>
+                <div class="link" onclick="swapContent('projects', 2)">Projects</div>
+            </div>
+        </div>
+
+        <div id="menu" style="display: none;">
+            <div class="menu">
+                <div class="link" onclick="swapContent('about', 2)">About</div>
+                <div class="link" onclick="swapContent('projects', 2)">Projects</div>
+            </div>
+        </div>
+
+        <div id="about" style="display: none;">
+            <div class="section-title">About</div>
+            <div class="section-body">
+                <p>Hi, I'm Zaki!</p>
+                <p>I'm currently in my final year of secondary school, studying maths, further maths, physics, and computer science.</p>
+                <p>I plan to study maths and computer science at university next year.</p>
+                <div class="homepage-link" onclick="swapContent('menu', 1)">Return to homepage</div>
+            </div>
+        </div>
+
+        <div id="projects" style="display: none;">
+            <div class="section-title section-title--projects">Projects</div>
+            <div class="section-body">
+                <div class="project">
+                    <div class="project-title"><a href="https://github.com/zaki-hussain/Project-Euler" target="_blank" class="project-title-text">Project Euler</a></div>
+                    <div class="project-description"><p>My solutions to maths/programming problems from <a href="https://projecteuler.net" target="_blank">projecteuler.net</a></p></div>
+                </div>
+                <div class="project">
+                    <div class="project-title"><a href="https://github.com/zaki-hussain/RSA" target="_blank" class="project-title-text">RSA Implementation</a></div>
+                    <div class="project-description"><p> My Python implementation of RSA</p></div>
+                </div>
+                <div class="project">
+                    <div class="project-title"><a href="https://github.com/zaki-hussain/zaki.me" target="_blank" class="project-title-text">zaki.me</a></div>
+                    <div class="project-description"><p>Source code for this website</p></div>
+                </div>
+                <div class="project">
+                    <div class="project-title"><a href="https://github.com/zaki-hussain?tab=repositories" target="_blank" class="project-title-text">All GitHub repositories</a></div>
+                    <div class="project-description"><p>Most things I've code recently are on GitHub</p></div>
+                </div>
+                <div class="homepage-link" onclick="swapContent('menu', 1)">Return to homepage</div>
+            </div>
+        </div>
+        
+        <script src="js/script.js"></script>
     </body>
 </html>
