@@ -139,6 +139,7 @@ h1 {
 
 p a {
     color: var(--accent);
+    text-decoration: none;
 }
 
 p a:hover {
