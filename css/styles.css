@@ -231,6 +231,10 @@ p a:hover {
         font-size: 1.25rem;
     }
 
+    .project-title-text:hover {
+        color: var(--accent);
+    }
+
     p a:hover {
         color: var(--accent);
     }
