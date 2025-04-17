@@ -230,4 +230,8 @@ p a:hover {
     .project-title-text {
         font-size: 1.25rem;
     }
+
+    p a:hover {
+        color: var(--accent);
+    }
 }
