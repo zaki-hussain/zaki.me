@@ -159,7 +159,7 @@ p a:hover {
 @media (max-width: 600px) {
     body {
         flex-direction: column;
-        margin: 2rem 1rem;
+        margin: 1rem 1rem;
         height: calc(100vh - 4rem);
     }
 
