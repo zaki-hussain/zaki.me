@@ -238,4 +238,8 @@ p a:hover {
     p a:hover {
         color: var(--accent);
     }
+
+    .homepage-link:hover {
+        color: var(--accent);
+    }
 }
